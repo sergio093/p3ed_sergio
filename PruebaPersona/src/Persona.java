@@ -6,6 +6,10 @@
 package pruebapersona;
 import java.util.regex.Pattern;
 
+/**
+ *
+ * @author sergio
+ */
 public class Persona {
 
     private String dni;
