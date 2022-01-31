@@ -10,18 +10,7 @@ import java.util.regex.Pattern;
  *
  * @author sergio
  */
-public class Persona {
 
-    private String dni;
-    private String nombre;
-    private String apellidos;
-    private int edad;
-
-    static final int mayoriaEdad = 18;
-
-    public Persona() {
-       // System.out.println("SE ESTÁ EJECUTANDO EL CONSTRUCTOR POR DEFECTO, PORQUE SI!!!!!!!");
-    }
     
     
     Persona(String nombrePers, String apellidosPers, int edadPers){
@@ -80,31 +69,7 @@ public class Persona {
         
     }
 
-    // Devuelve si es menor o no
-    public boolean esMenor() {
-        return this.edad < Persona.mayoriaEdad;
-    }
-    
-    
-    // Devuelve si es jubilado o no
-    public boolean esJubilado() {
-        
-        boolean jub = this.edad >= 65;
-        return jub;
-        //return this.edad >= 65;
-    }
-
-    //Devuelve la diferencia de edad entre este objeto y el recibido
-    public int diferenciaEdad(Persona p) {
-        return this.edad - p.edad;          //p2.edad - p3.edad  ////// p3.edad - p2.edad
-    }
-
-    public void imprime() {
-        System.out.println("DNI: " + this.dni);
-        System.out.println("Nombre: " + this.nombre);
-        System.out.println("Apellidos: " + this.apellidos);
-        System.out.println("Edad: " + this.edad);
-    }
+ 
 
     @Override
     public String toString(){
