@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author mario
+ * @author sergio
  */
 public class PruebaPersona {
 
